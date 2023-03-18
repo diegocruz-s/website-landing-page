@@ -1,7 +1,7 @@
 import styled, { createGlobalStyle } from 'styled-components'
 
 
-const GlobalStyle = createGlobalStyle`
+export const GlobalStyle = createGlobalStyle`
     * {
         box-sizing: border-box;
         margin: 0;
