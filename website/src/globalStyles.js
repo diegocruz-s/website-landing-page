@@ -24,7 +24,7 @@ export const Container = styled.div`
 export const MainHeading = styled.h1`
     font-size: clamp(2.3rem, 6vw, 4.5rem);
     margin-bottom: 2rem;
-    color: ${({ inverse }) => (inverse ? '$403ae3' : '#fff')};
+    color: ${({ inverse }) => (inverse ? '#403ae3' : '#fff')};
     width: 100%;
     letter-spacing: 4px;
     text-align: center;
@@ -34,7 +34,7 @@ export const Heading = styled.h2`
     color: ${({ inverse }) => (inverse ? '$403ae3' : '#fff')};
     margin: ${({ margin }) => (margin ? margin : '')};
     margin-bottom: ${({ mb }) => (mb ? mb : '')};
-    margin-bottom: ${({ mt }) => (mt ? mt : '')};
+    margin-top: ${({ mt }) => (mt ? mt : '')};
     letter-spacing: 0.4rem;
     line-height: 1.06;
     text-align: center;
@@ -100,9 +100,8 @@ export const Column = styled.div`
 `
 export const Button = styled.button`
     border-radius: 4px;
-    background: none;
     white-space: nowrap;
-    padding: 10 20px;
+    padding: 10px 20px;
     font-size: 16px;
     color: #fff;
     outline: none;
@@ -112,7 +111,7 @@ export const Button = styled.button`
     position: relative;
 
     &:before {
-        background: #fff;
+        background: #000;
         content: '';
         position: absolute;
         top: 50%;
