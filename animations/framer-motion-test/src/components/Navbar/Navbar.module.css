@@ -1,0 +1,94 @@
+
+  .logo{
+    font-size: 2.5em;
+  }
+  .header {
+    padding: .5em 2em;
+    background: none;
+    position: absolute;
+    /* relative */
+    width: 100%;
+    top: 0;
+    left: 0;
+    /*  */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border-bottom: 1px solid #fff; */
+
+  }
+  .openMenu {
+    z-index: 10;
+    /* width: 5em; */
+    padding: .7rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2.5em;
+    position: relative;
+  }
+  .openMenu button {
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    background: none;
+    font-size: 1rem;
+    text-align: end;
+  }
+  .burguer {
+    color: #fff;
+    display: block;
+    border-top: 3px solid;
+    width: 2em;
+  }
+  .burguer:nth-child(1) {
+    margin-bottom: .4em;
+  }
+  .burguer:nth-child(2) {
+    width: 1.5em;
+    transition: .3s all;
+    position: absolute;
+    right: 0;
+  }
+  .menu_container {
+    width: 100%;
+    position: fixed;
+    overflow: hidden;
+    background-color: rgba(0,0,0,.8);
+    height: 100vh;
+    right: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+  }
+  .closeMenu {
+    height: 2em;
+    width: 2em;
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+    background: transparent;
+    font-size: 1.2em;
+    border: 2px solid #fff;
+  }
+  .itemsMenu {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .itemsMenu .itemMenu {
+    margin-bottom: 0.4em;
+    font-size: 3em;
+    cursor: pointer;
+  }
+  .itemsMenu div {
+    border-bottom: 0.15rem solid #fff;
+    position: relative;
+  }
