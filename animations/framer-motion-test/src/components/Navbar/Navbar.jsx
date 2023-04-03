@@ -1,9 +1,9 @@
 import styles from './Navbar.module.css'
 import { AnimatePresence, motion } from 'framer-motion'
 import React, { useState } from 'react'
-import { NavbarAnimations, delayDefault } from '../../data/animations/NavbarAnimations'
+import { NavbarAnimations } from '../../data/animations/NavbarAnimations'
 
-function Navbar() {
+const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false)
     const [hoverBurguer, setHoverBurguer] = useState(false)
 
@@ -28,7 +28,9 @@ function Navbar() {
                     setIsOpen(!isOpen)
                 }}
             >
-                <button 
+                <motion.button 
+                    initial={isOpen ? { opacity: 0 } : { opacity: 1 }}
+                    animate={isOpen ? { opacity: 0 } : { opacity: 1, transition: { duration: 1.5 } }}
                     onMouseEnter={() => setHoverBurguer(true)}
                     onMouseLeave={() => setHoverBurguer(false)}
                 >
@@ -44,7 +46,7 @@ function Navbar() {
                         </>
                     ) }
                     
-                </button>
+                </motion.button>
                 
             </motion.div>
         </div>
@@ -85,7 +87,9 @@ function Navbar() {
                             transition={NavbarAnimations.itemsMenu[`${data.dataAnimate}`].transition}
                             exit={NavbarAnimations.itemsMenu[`${data.dataAnimate}`].exit}
                         >
-                            <motion.p
+                            <motion.a
+                                onClick={() => setIsOpen(false)}
+                                href='#abc'
                                 onMouseEnter={() => setDatasMenu(
                                     prev => prev.filter(e => {
                                         if(e.text === data.text) {
@@ -106,7 +110,7 @@ function Navbar() {
                                 )}
                             >
                                 {data.text}
-                            </motion.p>
+                            </motion.a>
                             <motion.div
                                 initial={NavbarAnimations.textHover.initial}
                                 animate={data.animate ? NavbarAnimations.textHover.animate : NavbarAnimations.textHover.exit}
@@ -121,4 +125,4 @@ function Navbar() {
   )
 }
 
-export default Navbar
+export {Navbar}

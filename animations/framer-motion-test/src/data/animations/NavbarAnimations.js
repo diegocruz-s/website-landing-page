@@ -4,8 +4,8 @@ const durationDefault = .4
 
 export const NavbarAnimations = {
     menuContainer: {
-        initial: { /*width: 0,*/ height: 0, opacity: 1, borderBottomLeftRadius: "30%", borderBottomRightRadius: "30%" },
-        animate: { /*width: "100vw",*/ height: "100vh", opacity: 1, borderBottomLeftRadius: 0, borderBottomRightRadius: 0 },
+        initial: { height: 0, opacity: 1, borderBottomLeftRadius: "30%", borderBottomRightRadius: "30%",  },
+        animate: {  height: "100vh", opacity: 1, borderBottomLeftRadius: 0, borderBottomRightRadius: 0 },
         transition: { duration: .5 },
         exit : {
             height: 0,

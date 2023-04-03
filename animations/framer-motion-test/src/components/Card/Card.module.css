@@ -1,0 +1,120 @@
+.testElement {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 3em;
+    width: 99vw;
+    margin-bottom: 2em;
+    min-height: 50vh;
+    max-height: 70vh;
+    overflow: hidden;
+}
+.testElement img {
+    min-width: 50%;
+    max-width: 55%;
+    background-color: #fff;
+    border-radius: 3em;
+
+}
+.testElement button {
+    text-align: center;
+}
+.testElement h2 {
+    margin-bottom: .4em;
+}
+.contentElement {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5em;
+    justify-content: center;
+    align-items: center;
+}
+.contentElement button {
+    min-width: 8vw;
+    padding: .4em;
+    border-radius: .5em;
+    border: 1px solid #fff;
+    color: #fff;
+    background: none;
+    cursor: pointer;
+    transition: all .3s;
+    position: relative;
+    z-index: 1;
+    transition: all .3s;
+    overflow: hidden;
+    margin-top: 1.5em;
+}
+.contentElement button::after{
+    content: "";
+    position: absolute;
+    background-color: rgb(248, 248, 248);
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 0;
+    height: 100%;
+    transition: all .3s;
+}
+.contentElement button:hover::after {
+    width: 100%;
+    color: #000;
+}
+.contentElement button:hover {
+    color: #1b1b1b;
+}
+.contentText {
+    text-align: justify;
+    position: relative;
+    overflow: auto;
+    padding: .5em;
+    max-height: 80%;
+    text-align: start;
+}
+
+.contentText::-webkit-scrollbar {
+    width: .5vw; 
+}
+
+.contentText::-webkit-scrollbar-thumb {
+    background-color: #464646; 
+    direction: ltr;
+
+}
+.contentText::-webkit-scrollbar-track {
+    background-color: #202020; 
+    direction: ltr;
+
+}
+
+
+
+@media screen and (max-width: 800px) {
+    .testElement {
+        flex-direction: column;
+        padding: .5em;
+        text-align: center;
+        min-height: 0;
+        max-height: 100vh;
+        width: 100%;
+        margin-bottom: 2em;
+    }    
+    .testElement img {
+        margin: 0 auto;
+        max-height: 50vh;
+        max-width: 100%;
+    }
+    .contentElement {
+        padding: .5em;
+    }
+    .testElement button {
+        margin-top: 1em;
+        margin-bottom: 0;
+    }
+    h2{
+        text-align: center;
+    }
+    p {
+        text-align: center;
+    }
+}

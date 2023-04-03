@@ -1,0 +1,21 @@
+:root{
+    --heightSlider: 27vh;
+}
+.carousel {
+    background-color: aqua;
+    width: 80vw;
+    height: calc( var(--heightSlider) + 3vh );
+    margin: auto;
+    margin-bottom: 20em;
+}
+.slider {
+    height: var(--heightSlider);
+    background-color: antiquewhite;
+}
+.item {
+    width: 100%;
+    height: var(--heightSlider);
+    background-color: azure;
+    border-radius: 1em;
+    color: #000;
+}
