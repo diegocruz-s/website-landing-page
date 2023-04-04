@@ -8,6 +8,8 @@
     min-height: 50vh;
     max-height: 70vh;
     overflow: hidden;
+    scroll-behavior: smooth;
+
 }
 .testElement img {
     min-width: 50%;

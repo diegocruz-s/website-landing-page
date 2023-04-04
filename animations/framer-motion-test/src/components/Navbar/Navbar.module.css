@@ -4,23 +4,20 @@
     color: #fff;
   }
   .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: .5em 2em;
     background: none;
     position: absolute;
     /* relative */
     width: 99vw;
+    z-index: 1;
     top: 0;
     left: 0;
-    /*  */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    /* border-bottom: 1px solid #fff; */
-
   }
   .openMenu {
     z-index: 10;
-    /* width: 5em; */
     padding: .7rem 1rem;
     display: flex;
     justify-content: center;
