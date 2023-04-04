@@ -1,0 +1,23 @@
+.footer {
+    width: 100vw;
+    background-color: #202020;
+    padding: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer .iconsSocial {
+    display: flex;
+    gap: 1.5em;
+}
+.footer .iconsSocial a {
+    color: #fff;
+}
+.icon {
+    cursor: pointer;
+    transition: .3s all;
+    font-size: 1.4em;
+}
+.icon:hover {
+    scale: 1.4;
+}

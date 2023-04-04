@@ -7,12 +7,13 @@ import { motion } from 'framer-motion'
 import { DatasCarousel } from '../../data/carousel/datas'
 import { CarouselAnimations } from '../../data/animations/CarouselAnimation';
 
-const Carousel = () => {
+const Carousel = ({ widthScreen }) => {
     const settings = {
+        className: 'totalCarousel',
         dots: true,
         infinite: true,
         speed: 500,
-        slidesToShow: 1,
+        slidesToShow: (widthScreen > 1200) ? 4 : (widthScreen > 800) ? 3 : (widthScreen > 500) ? 2 : 1,
         slidesToScroll: 1
     }
   return (
@@ -22,10 +23,17 @@ const Carousel = () => {
         whileInView={CarouselAnimations.whileInView}
         viewport={CarouselAnimations.viewport}
     >
+        <h2>Carousel</h2>
         <Slider className={styles.slider} {...settings}>
             {DatasCarousel.map(data => (
                 <div className={styles.item}>
-                    <h1>{data.text}</h1>
+                    <div className={styles.slideCarousel}>
+                        <img src={data.img} alt="" />
+                        <div className={styles.text}>
+                            <h3>{data.text}</h3>
+                        </div>
+                    </div>
+                    
                 </div>
 
             ))}

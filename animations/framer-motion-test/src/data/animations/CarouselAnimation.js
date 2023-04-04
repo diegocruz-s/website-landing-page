@@ -1,12 +1,18 @@
 export const CarouselAnimations = {
     initial: {
-        y: 300
+        opacity: 0,
+        scale: 0
     },
     whileInView: {
-        y: 0
+        opacity: 1,
+        scale: 1,
+        transition: {
+            duration: 0.8,
+            delay: 0.5
+          }
     },
     viewport: {
         once: true, 
-        amount: 0.5
+        amount: .5
     },
 }

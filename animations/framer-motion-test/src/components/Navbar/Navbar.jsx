@@ -16,11 +16,10 @@ const Navbar = () => {
     console.log(isOpen)
 
   return (
-    <div className={styles.navbar}>
+    <nav className={styles.navbar}>
         <div className={styles.header}>
             <div className={styles.logo}>
                 <p>Logo</p>
-                
             </div>
             <motion.div 
                 className={styles.openMenu} 
@@ -121,7 +120,7 @@ const Navbar = () => {
                 </motion.div>
             )}
         </AnimatePresence>
-      </div>
+      </nav>
   )
 }
 
