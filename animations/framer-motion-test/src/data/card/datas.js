@@ -9,27 +9,31 @@ export const datasCards = [
         img: Img, 
         text: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam, aliquLorem ipsum, dolor sit amet consectetur adipisicing elit. Nam, aliquLorem ipsum, dolor sit amet consectetur adipisicing elit. Nam, aliquLorem ipsum, dolor sit amet consectetur adipisicing elit. Nam, aliquLorem ipsum, dolor sit amet consectetur adipisicing elit. Nam, aliquLorem ipsum, dolor sit amet consectetur adipisicing elit. Nam, aliquLorem ipsum, dolor sit amet consectetur adipisicing elit. Nam, aliquLorem ipsum, dolor sit amet consectetur adipisicing elit. Nam, aliquam amet minima explicabo molestias totam ad quia nostrum, quas quidem cumque molestiae iure quis sint, et recusandae tempore. Tenetur, non.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam, aliquam amet minima explicabo molestias totam ad quia nostrum, quas quidem cumque molestiae iure quis sint, et recusandae tempore. Tenetur, non. Nam, aliquLorem ipsum, dolor sit amet consectetur adipisicing elit. Nam, aliquLorem ipsum, dolor sit amet consectetur adipisicing elit. Nam, aliquam amet minima explicabo molestias totam ad quia nostrum, quas quidem cumque molestiae iure quis sint, et recusandae tempore. Tenetur, non.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam, aliquam amet minima explicabo molestias totam ad quia nostrum, quas quidem cumque molestiae iure quis sint, et recusandae tempore. Tenetur, non. Nam, aliquLorem ipsum, dolor sit amet consectetur adipisicing elit. Nam, aliquLorem ipsum, dolor sit amet consectetur adipisicing elit. Nam, aliquam amet minima explicabo molestias totam ad quia nostrum, quas quidem cumque molestiae iure quis sint, et recusandae tempore. Tenetur, non.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam, aliquam amet minima explicabo molestias totam ad quia nostrum, quas quidem cumque molestiae iure quis sint, et recusandae tempore. Tenetur, non. Nam, aliquLorem ipsum, dolor sit amet consectetur adipisicing elit. Nam, aliquLorem ipsum, dolor sit amet consectetur adipisicing elit. Nam, aliquam amet minima explicabo molestias totam ad quia nostrum, quas quidem cumque molestiae iure quis sint, et recusandae tempore. Tenetur, non.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam, aliquam amet minima explicabo molestias totam ad quia nostrum, quas quidem cumque molestiae iure quis sint, et recusandae tempore. Tenetur, non.', 
         textButton: 'Text button', 
-        title: 'Title test'
+        title: 'Title test',
+        inverse: false,
     },
     {
         direction: 'right',
         img: ImgTwo, 
         text: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam, aliquam amet minima explicabo molestias totam ad quia nostrum, quas quidem cumque molestiae iure quis sint, et recusandae tempore. Tenetur, non.', 
         textButton: 'Text button', 
-        title: 'Title test'
+        title: 'Title test',
+        inverse: true,
     },
     {
         direction: 'left',
         img: ImgThree, 
         text: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam, aliquam amet minima explicabo molestias totam ad quia nostrum, quas quidem cumque molestiae iure quis sint, et recusandae tempore. Tenetur, non.', 
         textButton: 'Text button', 
-        title: 'Title test'
+        title: 'Title test',
+        inverse: false,
     },
     {
         direction: 'right',
         img: ImgFour, 
         text: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam, aliquam amet minima explicabo molestias totam ad quia nostrum, quas quidem cumque molestiae iure quis sint, et recusandae tempore. Tenetur, non.', 
         textButton: 'Text button', 
-        title: 'Title test'
+        title: 'Title test',
+        inverse: true,
     },
 ]

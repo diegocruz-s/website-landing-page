@@ -10,7 +10,7 @@ const FirstPage = () => {
         <h1>Título exemplo</h1>
         <div className={styles.btns}>
           <Button text='TB' />
-          <Button text='BT' />
+          <Button text='BT' inverse={true} />
         </div>
         <div 
           className={styles.nextPart}

@@ -10,6 +10,9 @@ body {
     overflow-x: hidden;
     scroll-behavior: smooth;
 }
+.container h2 {
+    text-align: center;
+}
 
 ::-webkit-scrollbar {
     width: .4vw; 

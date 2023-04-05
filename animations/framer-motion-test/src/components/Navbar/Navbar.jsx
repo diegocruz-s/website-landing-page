@@ -9,8 +9,9 @@ const Navbar = () => {
 
     const [datasMenu, setDatasMenu] = useState([
         { animate: false, dataAnimate: 'itemOne', text: 'Home' }, 
-        { animate: false, dataAnimate: 'itemTwo', text: 'About' }, 
-        { animate: false, dataAnimate: 'itemThree', text: 'Contact' }
+        { animate: false, dataAnimate: 'itemTwo', text: 'Features' }, 
+        { animate: false, dataAnimate: 'itemThree', text: 'Cards' }, 
+        { animate: false, dataAnimate: 'itemFour', text: 'Carousel' }
     ])
 
     console.log(isOpen)

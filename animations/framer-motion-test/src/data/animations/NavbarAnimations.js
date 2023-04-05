@@ -23,7 +23,7 @@ export const NavbarAnimations = {
 
     itemsMenu: {
         itemOne: {
-            initial: { y: yDefault * 2, opacity: 0 },
+            initial: { y: yDefault * 2.5, opacity: 0 },
             animate: { y: 0, opacity: 1 },
             transition: { delay: delayDefault + 0.1, duration: durationDefault },
             exit: {
@@ -37,7 +37,7 @@ export const NavbarAnimations = {
             }
         },
         itemTwo: {
-            initial: { y: yDefault * 1.5, opacity: 0 },
+            initial: { y: yDefault * 2, opacity: 0 },
             animate: { y: 0, opacity: 1 },
             transition: { delay: delayDefault + 0.2, duration: durationDefault },
             exit: {
@@ -51,7 +51,7 @@ export const NavbarAnimations = {
             }
         },
         itemThree: {
-            initial: { y: yDefault, opacity: 0 },
+            initial: { y: yDefault * 1.5, opacity: 0 },
             animate: { y: 0, opacity: 1 },
             transition: { delay: delayDefault + 0.3, duration: durationDefault },
             exit: {
@@ -63,7 +63,21 @@ export const NavbarAnimations = {
                 duration: durationDefault
               }
             }
-        }
+        },
+        itemFour: {
+          initial: { y: yDefault, opacity: 0 },
+          animate: { y: 0, opacity: 1 },
+          transition: { delay: delayDefault + 0.4, duration: durationDefault },
+          exit: {
+            opacity: 0,
+            y: yDefault * 2.5,
+            transition: {
+              ease: "easeInOut",
+              delay: delayDefault - 0.5,
+              duration: durationDefault
+            }
+          }
+      }
     },
 
     button: {

@@ -1,9 +1,15 @@
+:root {
+    --widthAfterInitial: 0;
+    --widthAfterFinal: 100%;
+    --color: #fff;
+    --colorHover: #1b1b1b;
+}
 .buttonComponent {
     min-width: 8vw;
     padding: .4em;
     border-radius: .5em;
     border: 1px solid #fff;
-    color: #fff;
+    color: var(--color);
     background: none;
     cursor: pointer;
     transition: all .3s;
@@ -20,14 +26,20 @@
     top: 0;
     left: 0;
     z-index: -1;
-    width: 0;
+    width: var(--widthAfterInitial);
     height: 100%;
     transition: all .3s;
 }
 .buttonComponent:hover::after {
-    width: 100%;
+    width: var(--widthAfterFinal);
     color: #000;
 }
 .buttonComponent:hover {
-    color: #1b1b1b;
+    color: var(--colorHover);
+}
+.buttonNormal {
+    background-color: antiquewhite;
+}
+.buttonInverse {
+    background-color: aqua;
 }

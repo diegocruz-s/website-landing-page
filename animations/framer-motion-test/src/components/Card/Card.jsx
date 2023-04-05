@@ -28,8 +28,9 @@ const Card = ({ card, widthScreen, setWidthScreen }) => {
 
                   <p>{card.text}</p>
                 </div>
-                <Button text={card.textButton} />
+                <Button text={card.textButton} inverse={card.inverse} />
               </div>
+
 
               { card.direction === 'right' && (
                 <img src={card.img} alt="" />
@@ -44,13 +45,16 @@ const Card = ({ card, widthScreen, setWidthScreen }) => {
                     <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam labore, laudantium reprehenderit ipsa dolor consequatur ipsum obcaecati illum sed ea quam neque eveniet blanditiis omnis, eius tenetur nostrum expedita facilis.
                     </p>
                   </div>
-                  <Button text={card.textButton} />
+                  <Button text={card.textButton} inverse={card.inverse} />
               </div>
+
             </>
           )}
           
 
+
       </motion.div>
+      
     
   )
 }
