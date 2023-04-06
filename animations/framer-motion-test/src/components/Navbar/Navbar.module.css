@@ -90,3 +90,10 @@
     border-bottom: 0.15rem solid #fff;
     position: relative;
   }
+  .itemsMenu a {
+    -webkit-text-stroke: 1px #fff;
+    color: rgb(0, 0, 0);
+    /* color: rgb(55, 0, 95); */
+    text-decoration: none;
+    display: block;
+  }

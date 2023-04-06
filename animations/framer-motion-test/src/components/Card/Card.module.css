@@ -9,14 +9,19 @@
     max-height: 70vh;
     overflow: hidden;
     scroll-behavior: smooth;
-
 }
 .testElement img {
+    border-radius: 1.5em;
     min-width: 50%;
     max-width: 55%;
-    background-color: #fff;
-    border-radius: 3em;
-
+    border-width: 1px;
+    border-style: solid;
+}
+.testElement img:nth-child(odd) {
+    border-color: rgb(0, 0, 150);
+}
+.testElement img:nth-child(even) {
+    border-color: rgb(55, 0, 95);
 }
 .testElement button {
     text-align: center;

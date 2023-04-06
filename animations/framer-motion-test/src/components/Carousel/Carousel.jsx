@@ -18,6 +18,7 @@ const Carousel = ({ widthScreen }) => {
     }
   return (
     <motion.div 
+        id='carousel'
         className={styles.carousel}
         initial={CarouselAnimations.initial}
         whileInView={CarouselAnimations.whileInView}

@@ -1,0 +1,110 @@
+.features {
+    margin-bottom: 5em;
+    /* background-color: aquamarine; */
+    width: 80vw;
+    margin: auto;
+    margin-bottom: 8em;
+}
+.features h2 {
+    margin-bottom: 1em;
+}
+
+.allFeatures {
+    width: 50%;
+    flex-wrap: wrap;
+    display: grid;
+    /* background-color: blueviolet; */
+    grid-template: auto / 1fr 1fr 1fr 1fr;
+    gap: 1em;
+    margin: auto;
+    justify-items: center;
+    padding: 1em;
+}
+.contentFeatures {
+    /* background-color: blue; */
+    display: flex;
+}
+.text {
+    /* background-color: coral; */
+    width: 50%;
+    padding: 2em;
+    
+}
+.text h3 {
+    margin-bottom: .8em;
+}
+.feature {
+    position: relative;
+    width: 100px;
+    height: 100px;
+       
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4.3em;
+}
+.border {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-width: 2px;
+    border-style: solid;
+    border-image: linear-gradient(45deg, rgb(0, 0, 150), indigo) 1; 
+    transition: transform 0.3s ease-out;
+    opacity: .4;
+}
+
+.feature:hover .border {
+    transform: rotate(90deg);
+    opacity: 1;
+}
+
+@media screen and (max-width: 1500px) {
+    .allFeatures {
+
+        grid-template: auto / 1fr 1fr 1fr;
+    
+    }
+    
+}
+@media screen and (max-width: 900px) {
+    .allFeatures {
+        grid-template: auto / 1fr 1fr;  
+    }
+}
+@media screen and (max-width: 1200px) {
+    .features {
+        width: 100vw;   
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .features {
+        width: 80vw;
+    }
+    .contentFeatures {
+        flex-direction: column;
+    }
+    .allFeatures {
+        grid-template: auto / 1fr 1fr 1fr 1fr;  
+        width: 100%;
+    }
+    .text {
+        width: 100%;
+        text-align: center;
+        margin-top: 1em;
+    }
+}
+@media screen and (max-width: 550px) {
+    .allFeatures {
+        grid-template: auto / 1fr 1fr 1fr;  
+    }
+}
+@media screen and (max-width: 400px) {
+    .allFeatures {
+        grid-template: auto / 1fr 1fr;  
+    }
+}

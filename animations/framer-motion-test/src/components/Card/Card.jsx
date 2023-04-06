@@ -8,6 +8,7 @@ const Card = ({ card, widthScreen, setWidthScreen }) => {
   
   return (
       <motion.div 
+        id='cards'
         className={styles.testElement}
         initial={ card.direction === 'left' ? 
           CardAnimations.moveCard.offScreenLeft 

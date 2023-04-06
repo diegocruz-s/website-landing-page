@@ -28,6 +28,10 @@
     height: 100%;
     text-align: center;
     width: 15vw;
+    transition: .2s all;
+}
+.slideCarousel:hover {
+    scale: 1.1;
 }
 .slideCarousel img {
     border-top-left-radius: .5em;

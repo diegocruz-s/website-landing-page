@@ -28,22 +28,28 @@ img{
 .nextPart {
     position: absolute;
     bottom: 2em;
-    animation: animateLink 3s infinite;
+    animation: animateLink 2.5s infinite;
     animation-timing-function: cubic-bezier(.51,.9,.78,.72);
 }
 .nextPart a {
     font-size: 2em;
     color: #fff;
+    transition: .2s all;
+    opacity: .5;
+}
+.nextPart a:hover {
+    font-size: 2.1em;
+    opacity: 1;
 }
 
 @keyframes animateLink {
     0% {
-        bottom: 1.2em;
+        bottom: 0em;
     }
     50% {
-        bottom: 3em;
+        bottom: 2em;
     }
     100% {
-        bottom: 1.2em;
+        bottom: 0em;
     }
 }

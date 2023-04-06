@@ -8,13 +8,11 @@ const Navbar = () => {
     const [hoverBurguer, setHoverBurguer] = useState(false)
 
     const [datasMenu, setDatasMenu] = useState([
-        { animate: false, dataAnimate: 'itemOne', text: 'Home' }, 
-        { animate: false, dataAnimate: 'itemTwo', text: 'Features' }, 
-        { animate: false, dataAnimate: 'itemThree', text: 'Cards' }, 
-        { animate: false, dataAnimate: 'itemFour', text: 'Carousel' }
+        { dataAnimate: 'itemOne', text: 'Home', to: 'firstPage' }, 
+        { dataAnimate: 'itemTwo', text: 'Features', to: 'features' }, 
+        { dataAnimate: 'itemThree', text: 'Cards', to: 'cards' }, 
+        { dataAnimate: 'itemFour', text: 'Carousel', to: 'carousel' }
     ])
-
-    console.log(isOpen)
 
   return (
     <nav className={styles.navbar}>
@@ -89,32 +87,12 @@ const Navbar = () => {
                         >
                             <motion.a
                                 onClick={() => setIsOpen(false)}
-                                href='#abc'
-                                onMouseEnter={() => setDatasMenu(
-                                    prev => prev.filter(e => {
-                                        if(e.text === data.text) {
-                                            e.animate = true
-                                            return e
-                                        }
-                                        return e
-                                    })
-                                )}
-                                onMouseLeave={() => setDatasMenu(
-                                    prev => prev.filter(e => {
-                                        if(e.text === data.text) {
-                                            e.animate = false
-                                            return e
-                                        }
-                                        return e
-                                    })
-                                )}
+                                href={`#${data.to}`}
+                                initial={NavbarAnimations.textHover.initial}
+                                whileHover={NavbarAnimations.textHover.whileInHover}
                             >
                                 {data.text}
                             </motion.a>
-                            <motion.div
-                                initial={NavbarAnimations.textHover.initial}
-                                animate={data.animate ? NavbarAnimations.textHover.animate : NavbarAnimations.textHover.exit}
-                            />
                         </motion.a>
                     ))}
                 </div>

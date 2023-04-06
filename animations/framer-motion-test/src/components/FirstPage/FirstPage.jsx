@@ -6,7 +6,7 @@ import { motion } from 'framer-motion'
 
 const FirstPage = () => {
   return (
-    <section className={styles.container_firstpage}>
+    <section id='firstPage' className={styles.container_firstpage}>
         <h1>Título exemplo</h1>
         <div className={styles.btns}>
           <Button text='TB' />

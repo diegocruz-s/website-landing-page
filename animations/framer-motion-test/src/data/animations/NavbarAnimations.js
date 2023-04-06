@@ -98,9 +98,8 @@ export const NavbarAnimations = {
     },
 
     textHover: {
-      initial: { width: 0 },
-      animate: { width:  "100%", transition: { duration: 0.5 } },
-      exit: { width:  0, transition: { duration: 0.2 } }
+      initial: { color: '#000', WebkitTextStroke: '1px #fff' },
+      whileInHover: { color: '#fff', scale: 1.2, transition: { duration: .3 } },
     },
 
     buttonCloseMenu: {

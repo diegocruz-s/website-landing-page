@@ -34,9 +34,8 @@ const App = () => {
       <FirstPage />
       <Features />
       <motion.h2
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        transition={{ duration: .8 }}
+        initial={{ opacity: 0, x: 50 }}
+        whileInView={{ opacity: 1, x: 0, transition: { duration: .8 } }}
         viewport={{ once: true }}
       >Cards</motion.h2>
       {datasCards.map(data => <Card card={data} widthScreen={widthScreen} setWidthScreen={setWidthScreen} />)}
